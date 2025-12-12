@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLARE | Emergency Reporting & Dispatch System</title>
+    <meta
+      name="description"
+      content="A comprehensive emergency reporting and dispatch platform with mobile apps, web command center, GPS tracking, SMS fallback, and multi-station management."
+    />
+    <meta name="author" content="FLARE Team" />
+    <meta property="og:title" content="FLARE | Emergency Response System" />
+    <meta
+      property="og:description"
+      content="Comprehensive system for citizens, responders, investigators, and fire station administrators."
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="page-shell hex-bg" id="home">
+      <!-- Header -->
+      <header class="site-header">
+        <div class="container nav-bar">
+          <a class="brand" href="#home">
+            <span class="brand-mark">
+              <img src="logo.png" class="logo-img" alt="FLARE Logo"/>
+            </span>
+            <span class="brand-text">
+              <span class="brand-name">FLARE</span>
+              <span class="brand-tagline">Fire Localization & Alerting Response Engine</span>
+            </span>
+          </a>
+
+          <nav class="nav-links" aria-label="Primary">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+          </button>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <main>
+        <section class="hero container">
+          <div class="hero-content">
+            <div class="status-pill">
+              <span class="ping" aria-hidden="true"></span>
+              <span>SYSTEM STATUS: <strong style="color: var(--foreground)">OPERATIONAL</strong></span>
+            </div>
+
+            <h1>
+              Comprehensive <span class="gradient">Emergency Response</span> System
+              <br />
+              Built for Citizens, Responders & Administrators
+            </h1>
+            <p>
+              Report and manage emergencies efficiently with real-time tracking, multi-station support, and SMS fallback.
+            </p>
+
+            <div class="cta-row">
+              <button class="btn btn-primary">Get App</button>
+              <button class="btn btn-ghost">View Demo</button>
+            </div>
+
+            <div class="stat-grid">
+              <article class="stat-card">
+                <div class="stat-value">3</div>
+                <div class="stat-label">Stations Supported</div>
+              </article>
+              <article class="stat-card">
+                <div class="stat-value">100%</div>
+                <div class="stat-label">Reliable Reporting</div>
+              </article>
+              <article class="stat-card">
+                <div class="stat-value">Realtime</div>
+                <div class="stat-label">Tracking & Dispatch</div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <!-- About Section -->
+<section id="about" class="section container">
+  <h2>Engineered for <span class="gradient">Critical Operations</span></h2>
+  <p class="lead">
+    A complete platform connecting citizens, responders, investigators, and fire station administrators.
+  </p>
+
+  <div class="about-grid">
+    <div class="radar" aria-hidden="true">
+      <div class="glow"></div>
+      <div class="pulse"></div>
+      <span class="corner tl"></span>
+      <span class="corner tr"></span>
+      <span class="corner bl"></span>
+      <span class="corner br"></span>
+    </div>
+
+    <div class="about-copy">
+      <h3>Real-time emergency coordination made simple</h3>
+      <p>
+        FLARE optimizes emergency response by connecting users, responders, and admins through intuitive mobile and web applications.
+      </p>
+      <p>
+        The platform includes GPS tracking, SMS fallback, multi-station dashboards, and intelligent dispatch tools.
+      </p>
+
+      <div class="fact-grid">
+        <div class="fact">
+          <strong>Realtime</strong>
+          <span>Location & Tracking</span>
+        </div>
+        <div class="fact">
+          <strong>Multi-Station</strong>
+          <span>Management</span>
+        </div>
+      </div>
+
+      <!-- Added Read More Button -->
+      <div class="cta-row" style="margin-top: 1.5rem;">
+        <a href="#full-about" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+        <!-- Features Section -->
+        <section id="features" class="section container">
+          <h2>Key Features</h2>
+          <p class="lead">A complete emergency reporting and dispatch system for citizens, responders, investigators, and admins.</p>
+
+          <div class="features-grid">
+            <article class="feature">
+              
+              <h4>User</h4>
+              <p>Report emergencies, view nearest fire stations, and chat with responders in real-time.</p>
+            </article>
+
+            <article class="feature">
+              
+              <h4>Responder</h4>
+              <p>Receive dispatched incidents, navigate via live map, and communicate with admins and reporters.</p>
+            </article>
+
+            <article class="feature">
+              
+              <h4>Investigator</h4>
+              <p>Mark incidents complete and submit post-incident investigation reports.</p>
+            </article>
+
+            <article class="feature">
+              
+              <h4>Fire Station Admin</h4>
+              <p>Track incidents, responders, and trucks on a multi-station dashboard with real-time maps.</p>
+            </article>
+
+            <article class="feature">
+              
+              <h4>Root Admin</h4>
+              <p>Manage stations, admin accounts, and monitor system-wide operations seamlessly.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="section container">
+          <h2>The <span class="gradient">Operators</span></h2>
+          <p class="lead">
+          Aspiring IT innovators developing meaningful solutions designed to help people and strengthen public safety.
+          </p>
+
+         <div class="team-slider">
+
+  <!-- SCROLLABLE MAIN CARDS -->
+  <div class="team-scroll-wrapper">
+    <div class="team-grid" id="teamGrid">
+      <article class="member">
+        <img src="gab.jpg">
+        <div class="info">
+          <h3>Gabriel Lugtu</h3>
+          <div class="role">Project CEO</div>
+        </div>
+      </article>
+
+      <article class="member"><img src="albit.png">
+        <div class="info"><h3>Anfred Albit</h3>
+          <div class="role">Head Developer</div>
+        </div>
+      </article>
+
+      <article class="member">
+        <img src="cirde.jpg">
+        <div class="info">
+          <h3>Cirde Mosquito</h3>
+          <div class="role">Frontend Developer</div>
+        </div>
+      </article>
+
+      <article class="member">
+        <img src="ken.jpg">
+        <div class="info">
+          <h3>Ken Caupit</h3>
+          <div class="role">Technical Writer</div>
+        </div>
+      </article>
+
+      <article class="member">
+        <img src="kenneth.jpg">
+        <div class="info">
+          <h3>Kenneth Valencia</h3>
+          <div class="role">UI/UX</div>
+        </div>
+      </article>
+
+      <article class="member">
+        <img src="jing.jpg">
+        <div class="info">
+          <h3>Jomil Bestudio</h3>
+          <div class="role">UI/UX</div>
+        </div>
+      </article>
+
+      <article class="member">
+        <img src="mike.jpg">
+        <div class="info">
+          <h3>Michael Tamayo</h3>
+          <div class="role">QA</div>
+        </div>
+      </article>
+
+      <article class="member">
+        <img src="josh.jpg">
+        <div class="info">
+          <h3>Joshua Bureros</h3>
+          <div class="role">QA</div>
+        </div>
+      </article>
+    </div>
+  </div>
+  <!-- ARROWS -->
+  <div class="nav">
+    <button class="nav-btn" id="prevBtn">&lt;</button>
+    <button class="nav-btn" id="nextBtn">&gt;</button>
+  </div>
+
+</div>
+
+</div>
+
+          <div class="cta-card">
+            <h3>Join the Mission</h3>
+            <p style="color: var(--muted)">
+              We are recruiting developers, emergency response experts, and designers to help build the next generation of public safety technology.
+            </p>
+            <a href="#contact">View open positions →</a>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer id="contact" class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <a class="brand" href="#home">
+                <span class="brand-mark">
+                  <img src="logo.png" alt="FLARE Logo" class="logo-img" />
+                </span>
+                <span>FLARE</span>
+              </a>
+
+              <p style="max-width: 320px">
+                Comprehensive emergency reporting and dispatch platform. Connecting citizens, responders, and administrators.
+              </p>
+              <p>projectflare331@gmail.com · #FLARE · Tagum City, PH</p>
+            </div>
+
+            <div>
+              <h4>Platform</h4>
+              <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">Integrations</a></li>
+                <li><a href="#about">Security</a></li>
+                <li><a href="#about">Pricing</a></li>
+                <li><a href="#about">API Docs</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Careers</a></li>
+                <li><a href="#team">Press</a></li>
+                <li><a href="#team">Partners</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+            <div>
+              <h4>Updates</h4>
+              <p style="color: var(--muted)">Follow us to receive updates about new features and improvements.</p>
+            <div class="social-icons">
+  <a href="#" class="icon facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="#" class="icon instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+</div>
+</div>
+
+        <div class="footer-bottom">
+    <span>© <span data-year></span> FLARE Systems Inc.</span>
+    <span class="status-dot">All systems operational</span>
+  </div>
+</footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
