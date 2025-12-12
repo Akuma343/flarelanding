@@ -36,6 +36,9 @@ body {
   overflow-x: hidden;
   animation: bgMove 18s ease-in-out infinite alternate;
 }
+html, body {
+    overflow-x: hidden;
+}
 
 /* ------------------------
    GLOBAL ANIMATIONS
@@ -684,63 +687,61 @@ visibility: visible !important;
 
 
 /* Base hidden state */
+/* Base section animation settings */
 section {
-opacity: 0;
-transition: opacity 0.9s ease, transform 0.9s ease;
+    opacity: 0;
+    transition: opacity 0.9s ease, transform 0.9s ease;
 }
-
 
 /* SECTION 1 — Fade + Slide Up */
 section:nth-of-type(1) {
-transform: translateY(40px);
+    transform: translateY(40px);
 }
 section:nth-of-type(1).visible {
-opacity: 1;
-transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
-
 
 /* SECTION 2 — Fade + Slide from Left */
 section:nth-of-type(2) {
-transform: translateX(-60px);
+    transform: translateX(-60px);
 }
 section:nth-of-type(2).visible {
-opacity: 1;
-transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
 }
-
 
 /* SECTION 3 — Fade + Slide from Right */
 section:nth-of-type(3) {
-transform: translateX(60px);
+    transform: translateX(60px);
 }
 section:nth-of-type(3).visible {
-opacity: 1;
-transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
 }
-
 
 /* SECTION 4 — Fade + Scale Up */
 section:nth-of-type(4) {
-transform: scale(0.85);
+    transform: scale(0.85);
 }
 section:nth-of-type(4).visible {
-opacity: 1;
-transform: scale(1);
+    opacity: 1;
+    transform: scale(1);
 }
-
 
 /* SECTION 5 — Fade + Rotate Slightly */
 section:nth-of-type(5) {
-transform: perspective(600px) rotateX(15deg);
+    transform: perspective(600px) rotateX(15deg);
 }
 section:nth-of-type(5).visible {
-opacity: 1;
-transform: perspective(600px) rotateX(0deg);
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg);
 }
 
-section {
-opacity: 0;
-transform: translateY(40px);
-transition: opacity 0.8s ease, transform 0.8s ease;
+/* OPTIONAL: Make transform distances smaller on mobile */
+@media (max-width: 600px) {
+    section:nth-of-type(2),
+    section:nth-of-type(3) {
+        transform: translateX(30px); /* reduce slide amount */
+    }
 }
