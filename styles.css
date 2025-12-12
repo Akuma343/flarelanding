@@ -151,11 +151,7 @@ img {
   text-transform: uppercase;
   line-height: 1.1;
 }
-@media (max-width: 600px) {
-  .brand-tagline {
-    display: none;
-  }
-}
+
 
 .nav-links {
   display: flex;
@@ -954,4 +950,5 @@ footer {
     transform: rotate(360deg);
   }
 }
+
 
