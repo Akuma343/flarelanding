@@ -37,9 +37,7 @@ body {
   overflow-x: hidden;
   animation: bgMove 18s ease-in-out infinite alternate;
 }
-html, body {
-    overflow-x: hidden;
-}
+
 
 /* ------------------------
    GLOBAL ANIMATIONS
@@ -289,11 +287,11 @@ main {
 }
 
 /* ------------------------
-   HERO
+   HERO (SPACING FIXED)
 ------------------------ */
 .hero {
   position: relative;
-  padding: 6.5rem 0 5rem;
+  padding: 3rem 0 5rem; /* 🔥 was 6.5rem */
   text-align: center;
   overflow: hidden;
 }
@@ -315,7 +313,7 @@ main {
   border: 1px solid var(--border);
   border-radius: 999px;
   background: rgba(255,255,255,0.04);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.1rem; /* 🔥 was 1.5rem */
   font-size: 0.9rem;
 }
 
@@ -354,12 +352,22 @@ main {
 }
 
 .hero .gradient {
-  background: linear-gradient(90deg, hsl(0,85%,55%), hsl(350,100%,50%), hsl(0,100%,70%));
+  background: linear-gradient(
+    90deg,
+    hsl(0,85%,55%),
+    hsl(350,100%,50%),
+    hsl(0,100%,70%)
+  );
   -webkit-background-clip: text;
   color: transparent;
 }
 
-.hero p { color: var(--muted); max-width: 640px; margin: 0 auto 1.8rem; font-size: 1.05rem; }
+.hero p {
+  color: var(--muted);
+  max-width: 640px;
+  margin: 0 auto 1.8rem;
+  font-size: 1.05rem;
+}
 
 /* CTA Row */
 .cta-row {
@@ -977,5 +985,109 @@ section:nth-of-type(5).visible {
   }
 }
 
+/* ==============================
+   FINAL NAVBAR + HERO MOBILE FIX
+============================== */
+@media (max-width: 768px) {
 
+  .site-header {
+    height: 64px;
+  }
 
+  main {
+    padding-top: 64px;
+  }
+
+  .nav-links {
+    top: 64px !important;
+  }
+
+  .hero {
+    padding-top: 2.4rem !important;
+  }
+
+  .logo-img {
+    height: 34px;
+  }
+
+  .menu-toggle {
+    font-size: 1.7rem;
+  }
+}
+
+/* ==============================
+   HERO MOBILE SPACING FIX
+============================== */
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 1.8rem 0 3rem !important;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 6vw, 2.6rem);
+    line-height: 1.1;
+  }
+
+  .status-pill {
+    margin-bottom: 1rem;
+  }
+}
+* ==============================
+   HARD MOBILE OVERFLOW FIX
+   (prevents sideways swipe)
+============================== */
+
+/* Lock page horizontally */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+}
+
+/* Fix 100vw overflow caused by fixed backgrounds */
+@media (max-width: 768px) {
+  canvas,
+  #background-animation,
+  .background-animation,
+  .bg-animation,
+  .animation-background,
+  #particles-background {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* ==============================
+   MOBILE TRANSFORM SAFETY
+   (prevents section slide drift)
+============================== */
+@media (max-width: 768px) {
+  section {
+    transform: translateX(0) translateY(0) scale(1) !important;
+  }
+}
+
+/* ==============================
+   HERO + NAVBAR MOBILE ALIGNMENT
+   (final polish)
+============================== */
+@media (max-width: 768px) {
+
+  .site-header {
+    height: 64px;
+  }
+
+  main {
+    padding-top: 64px;
+  }
+
+  .nav-links {
+    top: 64px !important;
+  }
+
+  .hero {
+    padding: 1.8rem 1rem 3rem !important;
+  }
+}
